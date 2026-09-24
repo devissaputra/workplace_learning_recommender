@@ -1,17 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
-<title id="title">Workplace Learning Recommender demo snapshot</title>
-<desc id="desc">Example values produced by the synthetic demo included in this repository.</desc>
-<rect width="1200" height="280" rx="24" fill="#111827"/>
-<text x="52" y="48" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#f9fafb">Demo snapshot</text>
-<text x="52" y="76" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#aeb8c5">Output from the bundled synthetic example. These are not research results.</text>
-<rect x="52.0" y="112" width="353.3" height="108" rx="14" fill="#1f2937" stroke="#46556a"/>
-<text x="70.0" y="142" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#93c5fd">Top resource</text>
-<text x="70.0" y="172" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#f3f4f6">Python practice</text>
-<rect x="423.3" y="112" width="353.3" height="108" rx="14" fill="#1f2937" stroke="#46556a"/>
-<text x="441.3" y="142" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#93c5fd">Second resource</text>
-<text x="441.3" y="172" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#f3f4f6">Writing practice</text>
-<rect x="794.7" y="112" width="353.3" height="108" rx="14" fill="#1f2937" stroke="#46556a"/>
-<text x="812.7" y="142" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#93c5fd">Reason</text>
-<text x="812.7" y="172" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#f3f4f6">Gap fit + resource quality</text>
-<text x="52" y="252" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8995a5">Run: python scripts/run_demo.py</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
+<title id="title">Workplace Learning Recommender synthetic demo</title>
+<desc id="desc">The synthetic demonstration includes four confirmed skill gaps, workplace context, resource constraints, exclusion reasons, coverage diagnostics and weight sensitivity.</desc>
+<rect width="1200" height="350" rx="24" fill="#111827"/>
+<text x="52" y="48" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#f9fafb">Synthetic workplace-learning recommendation demo</text>
+<text x="52" y="76" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#aeb8c5">The demo exercises recommendation logic; it does not report employee or learning-outcome data.</text>
+
+<rect x="52" y="112" width="250" height="112" rx="14" fill="#1f2937" stroke="#46556a"/>
+<text x="70" y="142" font-family="Arial" font-size="13" font-weight="600" fill="#93c5fd">Development needs</text>
+<text x="70" y="172" font-family="Arial" font-size="16" font-weight="600" fill="#f3f4f6">4 confirmed gaps</text>
+<text x="70" y="197" font-family="Arial" font-size="13" fill="#cbd5e1">+ met / unknown examples</text>
+
+<rect x="320" y="112" width="250" height="112" rx="14" fill="#1f2937" stroke="#46556a"/>
+<text x="338" y="142" font-family="Arial" font-size="13" font-weight="600" fill="#93c5fd">Context</text>
+<text x="338" y="172" font-family="Arial" font-size="16" font-weight="600" fill="#f3f4f6">role · task · goals</text>
+<text x="338" y="197" font-family="Arial" font-size="13" fill="#cbd5e1">modality · language · time</text>
+
+<rect x="588" y="112" width="250" height="112" rx="14" fill="#1f2937" stroke="#46556a"/>
+<text x="606" y="142" font-family="Arial" font-size="13" font-weight="600" fill="#93c5fd">Eligibility failures</text>
+<text x="606" y="172" font-family="Arial" font-size="16" font-weight="600" fill="#f3f4f6">prerequisite · time</text>
+<text x="606" y="197" font-family="Arial" font-size="13" fill="#cbd5e1">availability · no confirmed need</text>
+
+<rect x="856" y="112" width="292" height="112" rx="14" fill="#1f2937" stroke="#46556a"/>
+<text x="874" y="142" font-family="Arial" font-size="13" font-weight="600" fill="#93c5fd">Review outputs</text>
+<text x="874" y="172" font-family="Arial" font-size="16" font-weight="600" fill="#f3f4f6">component explanations</text>
+<text x="874" y="197" font-family="Arial" font-size="13" fill="#cbd5e1">coverage + ranking sensitivity</text>
+
+<text x="52" y="270" font-family="Arial" font-size="14" fill="#d1d5db">Catalog examples include a prerequisite-blocked project, an unavailable bootcamp, an over-budget residency, and a recently seen legacy course.</text>
+<text x="52" y="299" font-family="Arial" font-size="14" fill="#d1d5db">Freshness and prior exposure are separate signals; neither is presented as proof of educational quality.</text>
+<text x="52" y="326" font-family="Arial" font-size="13" fill="#8995a5">Run: python scripts/run_demo.py</text>
 </svg>
