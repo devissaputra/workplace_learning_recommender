@@ -1,13 +1,25 @@
 {
   "role": "Learning Analytics Specialist",
-  "role_tags": ["learning-analytics"],
-  "task_tags": ["analysis", "automation"],
-  "goal_tags": ["workflow-automation", "evidence-quality"],
-  "preferred_modalities": ["project", "workshop"],
+  "role_tags": [
+    "learning-analytics"
+  ],
+  "task_tags": [
+    "analysis",
+    "automation"
+  ],
+  "goal_tags": [
+    "workflow-automation",
+    "evidence-quality"
+  ],
+  "preferred_modalities": [
+    "project",
+    "workshop"
+  ],
   "language": "en",
   "available_hours": 10,
   "completed_resources": [],
   "recent_exposures": {
     "legacy-python": 3
-  }
+  },
+  "as_of": "2026-09-24"
 }
