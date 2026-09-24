@@ -363,6 +363,25 @@ class CoreTests(unittest.TestCase):
         )["scored"][0]["score"]
         self.assertGreater(matching, mismatching)
 
+    def test_goal_context_changes_score(self):
+        matching = core.score_resources(
+            NEEDS,
+            [RESOURCES[0]],
+            CONTEXT,
+            scale=SCALE,
+        )["scored"][0]["score"]
+        other_context = dict(
+            CONTEXT,
+            goal_tags=["facilitation"],
+        )
+        mismatching = core.score_resources(
+            NEEDS,
+            [RESOURCES[0]],
+            other_context,
+            scale=SCALE,
+        )["scored"][0]["score"]
+        self.assertGreater(matching, mismatching)
+
     def test_modality_preference_changes_score(self):
         project_context = dict(
             CONTEXT,
