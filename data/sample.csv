@@ -1,3 +1,11 @@
-resource_id,skill,difficulty,quality,modality
-R01,python,0.5,0.9,practice
-R02,writing,0.4,0.8,reading
+resource_id,title,skills,entry_level,target_level,quality,quality_source,modality,effort_hours,language,available,last_updated
+R01,Applied Python Analysis Lab,python,1.5,4.0,0.90,expert review,project,8,en,true,2026-07-01
+R02,Python Refresher,python,1.0,3.0,0.82,expert review,self-paced,3,en,true,2026-08-15
+R03,Statistics Foundations Lab,statistics,1.0,3.0,0.88,expert review,project,7,en,true,2026-06-15
+R04,Facilitation Practice Sprint,facilitation,1.0,3.0,0.84,expert review,workshop,4,en,true,2026-08-01
+R05,Learning Analytics Evidence Project,learning_analytics,2.0,4.0,0.91,expert review,project,9,en,true,2026-07-20
+R06,Learning Analytics Diagnostic Workshop,learning_analytics,1.0,3.0,0.80,expert review,workshop,4,en,true,2026-08-20
+R07,Stakeholder Data Storytelling,stakeholder_communication,1.5,4.0,0.87,expert review,workshop,5,en,true,2026-07-10
+R08,Legacy Python Course,python,1.0,4.0,0.78,legacy catalog review,self-paced,6,en,true,2023-02-01
+R09,Advanced Automation Residency,python,3.0,5.0,0.95,expert review,project,24,en,true,2026-08-01
+R10,Unavailable Statistics Bootcamp,statistics,1.0,4.0,0.93,expert review,bootcamp,9,en,false,2026-08-10
