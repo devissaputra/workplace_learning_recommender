@@ -1,1 +1,1 @@
-"""Research prototype package."""
+"""Explainable workplace learning recommendation tools."""
