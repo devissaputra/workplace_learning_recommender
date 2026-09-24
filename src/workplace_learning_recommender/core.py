@@ -12,13 +12,14 @@ DEFAULT_SCALE = {
 }
 
 DEFAULT_WEIGHTS = {
-    "need_priority": 0.22,
-    "gap_coverage": 0.20,
-    "task_fit": 0.14,
-    "role_fit": 0.08,
+    "need_priority": 0.20,
+    "gap_coverage": 0.18,
+    "task_fit": 0.12,
+    "role_fit": 0.07,
+    "goal_fit": 0.08,
     "quality": 0.14,
     "modality_fit": 0.08,
-    "effort_fit": 0.06,
+    "effort_fit": 0.05,
     "freshness": 0.04,
     "novelty": 0.04,
 }
@@ -548,6 +549,10 @@ def _score_for_need(resource, skill, need, context, max_priority, weights):
         "role_fit": _tag_fit(
             resource["role_tags"],
             context["role_tags"],
+        ),
+        "goal_fit": _tag_fit(
+            resource["goal_tags"],
+            context["goal_tags"],
         ),
         "quality": resource["quality"],
         "modality_fit": _modality_fit(
