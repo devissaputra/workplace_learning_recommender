@@ -133,11 +133,13 @@ def validate_needs(needs, *, scale=None, minimum_confidence=0.5):
         if confidence is not None:
             confidence = _unit_interval(confidence, f"{skill} confidence")
 
+        target = _level(record.get("target"), f"{skill} target", scale)
+
         if status == "unknown_evidence":
             normalized[skill] = {
                 "status": status,
                 "current": None,
-                "target": record.get("target"),
+                "target": target,
                 "gap": None,
                 "priority": None,
                 "confidence": confidence,
@@ -147,7 +149,6 @@ def validate_needs(needs, *, scale=None, minimum_confidence=0.5):
             continue
 
         current = _level(record.get("current"), f"{skill} current", scale)
-        target = _level(record.get("target"), f"{skill} target", scale)
         gap = record.get("gap", max(0.0, target - current))
         gap = _finite_number(gap, f"{skill} gap")
         if gap < 0:
@@ -470,6 +471,9 @@ def eligibility_report(needs, resources, context=None, *, scale=None):
 
         if not resource["available"]:
             reasons.append("resource_unavailable")
+
+        if resource["last_updated"] > context["as_of"]:
+            reasons.append("future_last_updated")
 
         if resource["id"] in context["completed_resources"]:
             reasons.append("already_completed")
