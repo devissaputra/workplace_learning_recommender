@@ -188,6 +188,20 @@ class CoreTests(unittest.TestCase):
         )
         self.assertFalse(result["python"]["eligible"])
 
+    def test_unknown_evidence_target_still_validates(self):
+        bad = {
+            "unknown": {
+                "status": "unknown_evidence",
+                "current": None,
+                "target": 9,
+                "gap": None,
+                "priority": None,
+                "confidence": None,
+            }
+        }
+        with self.assertRaises(ValueError):
+            core.validate_needs(bad, scale=SCALE)
+
     def test_nan_priority_rejected(self):
         bad = {
             "python": {
@@ -230,6 +244,24 @@ class CoreTests(unittest.TestCase):
             core.validate_context(
                 {"recent_exposures": {"r1": -1}}
             )
+
+    def test_future_resource_update_is_excluded(self):
+        resource = dict(
+            RESOURCES[0],
+            id="future",
+            last_updated="2027-01-01",
+        )
+        context = dict(CONTEXT, as_of="2026-09-24")
+        report = core.eligibility_report(
+            NEEDS,
+            [resource],
+            context,
+            scale=SCALE,
+        )
+        self.assertIn(
+            "future_last_updated",
+            report["excluded"][0]["reasons"],
+        )
 
     def test_unavailable_resource_is_excluded(self):
         resources = [
