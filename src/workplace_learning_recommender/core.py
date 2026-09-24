@@ -194,6 +194,8 @@ def validate_needs(needs, *, scale=None, minimum_confidence=0.5):
 
 def validate_context(context=None, *, as_of=None):
     context = {} if context is None else dict(context)
+    if "as_of" in context:
+        as_of = context["as_of"]
     as_of = date.today() if as_of is None else _parse_date(as_of, "as_of")
 
     role = context.get("role")
