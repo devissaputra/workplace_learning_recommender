@@ -1,8 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="530" viewBox="0 0 1200 530" role="img" aria-labelledby="title desc">
+<title id="title">Workplace Learning Recommender evaluation checklist</title>
+<desc id="desc">Evaluation checklist covering eligibility precision, ranking relevance, skill coverage, explanation usefulness, rejection reasons and learning impact.</desc>
 <rect width="100%" height="100%" fill="#FAFBFA"/>
-<text x="60" y="64" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1B2430">Workplace Learning Recommender · evaluation dashboard</text>
-<text x="60" y="99" font-family="Arial, sans-serif" font-size="17" fill="#5B6660">Evaluation dimensions to inspect. Bars are illustrative only and do not report measured results.</text>
-<rect x="52" y="126" width="1096" height="300" rx="18" fill="#F3F5F3" stroke="#CDD3CF"/>
-<text x="70" y="189" font-family="Arial, sans-serif" font-size="17" fill="#26343B">nDCG</text><rect x="330" y="170" width="600" height="25" rx="8" fill="#E8EBE8"/><rect x="330" y="170" width="468" height="25" rx="8" fill="#5A7F82"/><text x="950" y="189" font-family="Arial, sans-serif" font-size="15" fill="#5B6660">illustrative</text><text x="70" y="259" font-family="Arial, sans-serif" font-size="17" fill="#26343B">coverage</text><rect x="330" y="240" width="600" height="25" rx="8" fill="#E8EBE8"/><rect x="330" y="240" width="396" height="25" rx="8" fill="#5A7F82"/><text x="950" y="259" font-family="Arial, sans-serif" font-size="15" fill="#5B6660">illustrative</text><text x="70" y="329" font-family="Arial, sans-serif" font-size="17" fill="#26343B">novelty</text><rect x="330" y="310" width="600" height="25" rx="8" fill="#E8EBE8"/><rect x="330" y="310" width="348" height="25" rx="8" fill="#5A7F82"/><text x="950" y="329" font-family="Arial, sans-serif" font-size="15" fill="#5B6660">illustrative</text><text x="70" y="399" font-family="Arial, sans-serif" font-size="17" fill="#26343B">task relevance</text><rect x="330" y="380" width="600" height="25" rx="8" fill="#E8EBE8"/><rect x="330" y="380" width="432" height="25" rx="8" fill="#5A7F82"/><text x="950" y="399" font-family="Arial, sans-serif" font-size="15" fill="#5B6660">illustrative</text>
-<text x="70" y="455" font-family="Arial, sans-serif" font-size="15" fill="#5B6660">Recommendations connect learning resources to real work rather than optimizing clicks alone.</text>
+<text x="60" y="64" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1B2430">Workplace Learning Recommender · evaluation checklist</text>
+<text x="60" y="99" font-family="Arial, sans-serif" font-size="17" fill="#5B6660">No empirical nDCG, novelty, or learning-effectiveness score is claimed by the current synthetic prototype.</text>
+
+<rect x="60" y="140" width="330" height="130" rx="18" fill="#E8F1F3" stroke="#87949A"/>
+<text x="82" y="174" font-family="Arial" font-size="17" font-weight="700" fill="#1B2430">Eligibility precision</text>
+<text x="82" y="203" font-family="Arial" font-size="14" fill="#26343B">Were excluded resources truly</text>
+<text x="82" y="225" font-family="Arial" font-size="14" fill="#26343B">infeasible, irrelevant, or blocked?</text>
+
+<rect x="435" y="140" width="330" height="130" rx="18" fill="#EEF3E8" stroke="#87949A"/>
+<text x="457" y="174" font-family="Arial" font-size="17" font-weight="700" fill="#1B2430">Ranking relevance</text>
+<text x="457" y="203" font-family="Arial" font-size="14" fill="#26343B">Compare with gap-only, quality-only,</text>
+<text x="457" y="225" font-family="Arial" font-size="14" fill="#26343B">random, and expert baselines.</text>
+
+<rect x="810" y="140" width="330" height="130" rx="18" fill="#F5EDE4" stroke="#87949A"/>
+<text x="832" y="174" font-family="Arial" font-size="17" font-weight="700" fill="#1B2430">Coverage & concentration</text>
+<text x="832" y="203" font-family="Arial" font-size="14" fill="#26343B">How many confirmed gaps are covered?</text>
+<text x="832" y="225" font-family="Arial" font-size="14" fill="#26343B">Does one skill dominate the list?</text>
+
+<rect x="60" y="305" width="330" height="130" rx="18" fill="#ECE8F5" stroke="#87949A"/>
+<text x="82" y="339" font-family="Arial" font-size="17" font-weight="700" fill="#1B2430">Explanation usefulness</text>
+<text x="82" y="368" font-family="Arial" font-size="14" fill="#26343B">Can the learner see and challenge</text>
+<text x="82" y="390" font-family="Arial" font-size="14" fill="#26343B">the factors behind the recommendation?</text>
+
+<rect x="435" y="305" width="330" height="130" rx="18" fill="#F4EFE8" stroke="#87949A"/>
+<text x="457" y="339" font-family="Arial" font-size="17" font-weight="700" fill="#1B2430">Rejection reasons</text>
+<text x="457" y="368" font-family="Arial" font-size="14" fill="#26343B">Why do learners reject, postpone,</text>
+<text x="457" y="390" font-family="Arial" font-size="14" fill="#26343B">or correct recommendations?</text>
+
+<rect x="810" y="305" width="330" height="130" rx="18" fill="#EAF0EC" stroke="#87949A"/>
+<text x="832" y="339" font-family="Arial" font-size="17" font-weight="700" fill="#1B2430">Learning impact</text>
+<text x="832" y="368" font-family="Arial" font-size="14" fill="#26343B">Do accepted resources improve</text>
+<text x="832" y="390" font-family="Arial" font-size="14" fill="#26343B">independent competency evidence?</text>
+
+<text x="60" y="480" font-family="Arial" font-size="15" fill="#5B6660">Clicks, starts, ratings, and completions are behavior signals—not proof that workplace learning improved.</text>
 </svg>
