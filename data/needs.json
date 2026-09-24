@@ -1,0 +1,57 @@
+{
+  "scale": {
+    "name": "Synthetic workplace proficiency scale",
+    "minimum": 0,
+    "maximum": 5
+  },
+  "needs": {
+    "python": {
+      "status": "gap",
+      "current": 2.0,
+      "target": 4.0,
+      "gap": 2.0,
+      "priority": 2.4,
+      "confidence": 0.90
+    },
+    "statistics": {
+      "status": "gap",
+      "current": 1.5,
+      "target": 3.0,
+      "gap": 1.5,
+      "priority": 2.1,
+      "confidence": 0.90
+    },
+    "learning_analytics": {
+      "status": "gap",
+      "current": 2.0,
+      "target": 4.0,
+      "gap": 2.0,
+      "priority": 2.5,
+      "confidence": 0.85
+    },
+    "facilitation": {
+      "status": "gap",
+      "current": 2.0,
+      "target": 3.0,
+      "gap": 1.0,
+      "priority": 0.9,
+      "confidence": 0.80
+    },
+    "instructional_design": {
+      "status": "exceeds_target",
+      "current": 4.5,
+      "target": 4.0,
+      "gap": 0.0,
+      "priority": 0.0,
+      "confidence": 0.95
+    },
+    "stakeholder_communication": {
+      "status": "unknown_evidence",
+      "current": null,
+      "target": 4.0,
+      "gap": null,
+      "priority": null,
+      "confidence": null
+    }
+  }
+}
