@@ -1,14 +1,29 @@
 # Workplace Learning Recommender
 
+This workplace-learning recommender filters resources for feasibility before ranking them against confirmed competency gaps and work context. It exposes contributions from need priority, gap coverage, task fit, quality, effort, and other declared factors, then checks coverage and sensitivity to weights. The output is a reasoned recommendation based on supplied metadata, not a validated estimate of learning impact.
+
+## Start here
+
+- [Calculations, evidence and verification scope](CALCULATIONS.md)
+- [Figure sources and exact numerical paths](docs/figure_spec.json)
+- [Data status](data/README.md)
+
+![Study question, data, design and interpretation](assets/review_overview.svg)
+
+![Defined calculation and source-linked evidence](assets/review_calculations.svg)
+
+**Review scope:** 34 existing unittest checks passed. The bundled demonstration executed successfully in this review.
+
+## Detailed project documentation
+
 > Explainable workplace-learning recommendations with hard eligibility checks, context-aware scoring, coverage control, and ranking sensitivity.
 
 [![CI](https://github.com/devissaputra/workplace_learning_recommender/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/workplace_learning_recommender/actions/workflows/ci.yml)
 
-![Workplace Learning Recommender architecture](assets/architecture.svg)
 
 **Area:** Learning & Development · Workplace Learning · Recommendation Systems  
 **Status:** working research prototype  
-**Author:** Devis Wawan Saputra
+**Author:** Devis Saputra
 
 ## Why this project exists
 
@@ -33,7 +48,6 @@ It does **not** infer employee capability, motivation, personality, career inten
 
 The recommender separates **eligibility** from **ranking**.
 
-![Workplace Learning Recommender data flow](assets/data_flow.svg)
 
 ### Step 1: confirmed development needs
 
@@ -173,7 +187,6 @@ This makes it easier to see when a recommendation depends heavily on one arbitra
 
 ## Synthetic demo
 
-![Synthetic demo snapshot](assets/demo_snapshot.svg)
 
 The bundled synthetic example includes:
 
@@ -279,7 +292,6 @@ Those require relevance labels or real outcome data.
 
 ## Evaluation plan
 
-![Workplace Learning Recommender evaluation checklist](assets/evaluation_dashboard.svg)
 
 A credible study should examine:
 

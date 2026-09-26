@@ -1,0 +1,8 @@
+{
+  "kind": "illustrative_calculation",
+  "note": "Two-component illustration only; production ranking has ten components.",
+  "outputs": {
+    "weighted score: .6\u00d7.8 + .4\u00d7.5": 0.6799999999999999,
+    "gap coverage: current 2 to 3 of target 4": 0.5
+  }
+}

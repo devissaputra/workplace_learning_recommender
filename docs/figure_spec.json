@@ -1,0 +1,30 @@
+{
+  "question": "Which feasible resource best addresses a confirmed gap?",
+  "data": "Supplied competency needs, work context and resource metadata.",
+  "method": "Apply hard eligibility filters; score eligible resources with exposed components; select for coverage and inspect weight sensitivity.",
+  "formula": "Resource score = sum(normalized weight × component score).",
+  "interpretation": "Language, time and prerequisites are filters, not compensable preferences. Scores encode policy weights and supplied quality ratings; high rank is not evidence of a resource’s causal effect on performance.",
+  "status": "SYNTHETIC / RULE-BASED PROTOTYPE | no educational validity claim",
+  "source": "results/review_examples.json",
+  "rows": [
+    {
+      "label": "weighted score: .6×.8 + .4×.5",
+      "path": [
+        "outputs",
+        "weighted score: .6×.8 + .4×.5"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "gap coverage: current 2 to 3 of target 4",
+      "path": [
+        "outputs",
+        "gap coverage: current 2 to 3 of target 4"
+      ],
+      "unit": "unitless"
+    }
+  ],
+  "table_title": "Worked example — illustrative, not a measured research result",
+  "evidence_note": "Illustrative inputs and calculations are in scripts/review_examples.py.",
+  "finding": "This workplace-learning recommender filters resources for feasibility before ranking them against confirmed competency gaps and work context. It exposes contributions from need priority, gap coverage, task fit, quality, effort, and other declared factors, then checks coverage and sensitivity to weights. The output is a reasoned recommendation based on supplied metadata, not a validated estimate of learning impact."
+}

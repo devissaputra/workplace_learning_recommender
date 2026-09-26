@@ -1,3 +1,7 @@
+# Calculation reading guide: ../CALCULATIONS.md (repository root).
+# Resource score = sum(normalized weight × component score).
+# Language, time and prerequisites are filters, not compensable preferences. Scores encode policy weights and supplied quality ratings; high rank is not evidence of a resource’s causal effect on performance.
+
 import math
 from collections import Counter
 from collections.abc import Mapping, Sequence
